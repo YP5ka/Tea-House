@@ -1,0 +1,158 @@
+body{
+    height: 100%;
+    margin: 0;
+    
+}
+//themes
+#dark{
+    background-color: #0B1D21;
+
+    header{
+        h1{
+            color: #96E8DE;
+        }
+
+        h3{
+            color: #96E8DE;
+        }
+    }
+
+    .content{
+        .block_txt{
+            background-color: #35726A;
+            
+        }
+        .block_gestures{
+            background-color: #60A79F;
+        }
+    }
+
+    footer{
+        background-color: #102A31;
+    }
+}
+
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10% 0 10%;
+    align-items: center;
+    
+    h1{
+        font-family: 'Russo One';
+        font-weight: 400;
+    }
+
+    h3{
+        font-family: 'Saira';
+        font-weight: 400;
+    }
+    @media (max-width: 620px) {
+        justify-content: center;
+        h3{
+            display: none;
+        }
+    
+        
+    }
+}
+
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1 1 auto;
+
+    .block_txt{
+        display: flex;
+        background-color: #2A464E;
+        border-radius: 25px;
+        width: 760px;
+        height: 400px;
+        
+        img{
+            margin: 36px 0 0 28px;
+            width: 100px;
+            height: 100px;
+        }
+        p{
+            margin: 45px 0 0 20px;
+            color: #FFFFFF4D;
+            outline: none;
+        }
+    }
+
+   
+    .block_gestures{
+        display: flex;
+        background-color: #657A87;
+        border-radius: 25px;
+        width: 760px;
+        height: 400px;
+        
+        img{
+            margin: 36px 0 0 28px;
+            width: 100px;
+            height: 100px;
+        }
+        p{
+            margin: 45px 0 0 20px;
+            color: #FFFFFF4D;
+            outline: none;
+        }
+    }
+
+    @media (max-width: 620px){
+        flex-direction: column;
+        justify-content: center;
+        
+        img{
+            width: 65px;
+            height: 65px;
+        }
+
+        .block_txt{
+            max-width: 90%;
+            max-height: 200px;
+            margin-bottom: 25px;
+            img{
+                width: 60px;
+                height: 60px;
+            }
+        }
+        .block_gestures{
+            max-width: 90%;
+            max-height: 200px;
+            margin-top: 25px;
+            img{
+                width: 60px;
+                height: 60px;
+            }
+        }
+       
+    }
+}
+
+
+footer{
+    display: flex;
+    background-color: #0B1D21;
+    justify-content: space-evenly;
+    
+    img{
+        width: 50px;
+        height: 50px;
+    }   
+}
+@media (min-width: 620px) {
+    footer{
+        display: none;
+    }
+}
