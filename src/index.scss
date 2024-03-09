@@ -3,10 +3,24 @@ body{
     margin: 0;
     
 }
+textarea {
+    resize: none;
+    outline: none ;
+ }
+ .pointer
+ {
+    cursor: pointer;
+ }
+ p
+ {
+    font-family: monospace;
+ }
 //themes
 #dark{
     background-color: #0B1D21;
-
+    p{
+        color: #adfff7
+    }
     header{
         h1{
             color: #96E8DE;
@@ -16,14 +30,28 @@ body{
             color: #96E8DE;
         }
     }
-
+    
     .content{
         .block_txt{
             background-color: #35726A;
-            
+            .block_txt-textarea{
+                background-color: #35726A;
+                color: #96E8DE;
+            }
+            .block_txt-textarea::placeholder{
+                color: #96E8DE;
+            }
         }
         .block_gestures{
             background-color: #60A79F;
+            .block_gestures-textarea
+            {
+                background-color: #60A79F;
+                color: #96E8DE;
+            }
+            .block_gestures-textarea::placeholder{
+                color: #96E8DE;
+            }
         }
     }
 
@@ -31,7 +59,13 @@ body{
         background-color: #102A31;
     }
 }
-
+#reversed
+{
+    .content{
+        flex-direction: row-reverse;
+    }
+    
+}
 .wrapper{
     min-height: 100vh;
     display: flex;
@@ -62,6 +96,7 @@ header{
     
         
     }
+
 }
 
 .content{
@@ -76,19 +111,42 @@ header{
         border-radius: 25px;
         width: 760px;
         height: 400px;
-        
-        img{
+        .block_txt-textarea{
+            width: 76%;
+            background-color: #2A464E;
+            color: #FFFFFF4D;
+            margin: 45px 0 0 20px;
+            border: 0;
+            font-size: 18px;
+            border-radius: 25px;
+            padding: 9px;
+        }
+        .block_txt-p
+        {
+            display: none;
+        }
+        .block_txt-textarea::placeholder{
+            color: #FFFFFF4D;
+        }
+        img
+        {
             margin: 36px 0 0 28px;
             width: 100px;
             height: 100px;
         }
         p{
+            padding: 9px;
             margin: 45px 0 0 20px;
             color: #FFFFFF4D;
             outline: none;
+            font-size: 18px;
         }
     }
 
+    .replace:hover
+    {
+        cursor: pointer;
+    }
    
     .block_gestures{
         display: flex;
@@ -96,8 +154,22 @@ header{
         border-radius: 25px;
         width: 760px;
         height: 400px;
-        
-        img{
+        .block_gestures-textarea{
+            display: none;
+            width: 76%;
+            background-color: #657A87;
+            color: #FFFFFF4D;
+            margin: 45px 0 0 20px;
+            border: 0;
+            font-size: 18px;
+            border-radius: 25px;
+            padding: 9px;
+        }
+        .block_gestures-textarea::placeholder{
+            color: #FFFFFF4D;
+        }
+        img
+        {
             margin: 36px 0 0 28px;
             width: 100px;
             height: 100px;
@@ -106,6 +178,8 @@ header{
             margin: 45px 0 0 20px;
             color: #FFFFFF4D;
             outline: none;
+            padding: 9px;
+            font-size: 18px;
         }
     }
 
@@ -131,6 +205,7 @@ header{
             max-width: 90%;
             max-height: 200px;
             margin-top: 25px;
+            
             img{
                 width: 60px;
                 height: 60px;
