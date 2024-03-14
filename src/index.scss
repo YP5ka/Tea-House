@@ -64,13 +64,17 @@ textarea {
     .content{
         flex-direction: row-reverse;
     }
-    
+    @media (max-width: 620px) {
+        .content{
+            flex-direction: column-reverse;
+            .block_txt{margin-top: 21px;}
+        }   .block_gestures{margin-bottom: 21px;}
+    }
 }
 .wrapper{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-   
 }
 
 header{
@@ -146,6 +150,11 @@ header{
     .replace:hover
     {
         cursor: pointer;
+    }
+    .replace
+    {
+        margin-left: 20px;
+        margin-right: 20px;
     }
    
     .block_gestures{
