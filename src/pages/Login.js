@@ -1,7 +1,11 @@
 import React from 'react';
+import {BrowserRouter, Routes, Route, useNavigate} from 'react-router-dom';
+import Register from './pages/Register';
+
 function Login(){
     
     return(
+        
         <div className='container'>
             <body className='container_body'>
                 <div className='container_body_div_img'>

@@ -1,4 +1,4 @@
-import WebcamComponent from './webcamera';
+import WebcamComponent from '../webcamera';
 import React, { useState } from 'react';
 
 function App() {
