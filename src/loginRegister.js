@@ -1,6 +1,6 @@
 import React from 'react';
 
-function loginRegiseter()
+function loginRegister()
 {
     
     return(
