@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import Register from './Register';
-import Login from '/Login';
+import Login from './Login';
 import './index.scss';
 import './logReg.scss';
 
