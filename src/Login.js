@@ -1,5 +1,5 @@
 import React from 'react';
-function Register(){
+function Login(){
     
     return(
         <div className='container'>
@@ -8,20 +8,18 @@ function Register(){
                     <img className='container_body_img' src='/img/sign.svg'></img>
                 </div>
                 <form action='' className='container_form'>
-                    <input className='container_form_input' id='name' placeholder='Имя' type='text' required></input>
-                    <input className='container_form_input' id='surname' placeholder='Фамилия' type='text' required></input>
                     <input className='container_form_input' id='email' placeholder='Эл. почта' type='email' required></input>
                     <div className='container_form_div_btn'>
-                        <button className='container_form_btn' type='submit'>Регистрация</button>
+                        <button className='container_form_btn' type='submit'>Вход</button>
                     </div>
                 </form>
                 <div className='container_body_footer'>
-                    <p className='container_footer_p'>Уже есть аккаунт?</p>
-                    <a className='container_footer_a' href=''>Вход</a>
+                    <p className='container_footer_p'>Ещё нет аккаунта ?</p>
+                    <a className='container_footer_a' href=''>Регистрация</a>
                 </div>
                 
             </body>
         </div>
     );
 } 
-export default Register;
+export default Login;
