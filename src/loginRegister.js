@@ -1,7 +1,6 @@
 import React from 'react';
 
-function loginRegister()
-{
+function LoginRegister(){
     
     return(
         <div className='container'>
@@ -21,3 +20,4 @@ function loginRegister()
         </div>
     );
 } 
+export default LoginRegister;
