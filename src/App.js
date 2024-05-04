@@ -32,7 +32,7 @@ function App() {
               className="block_txt-textarea"
               placeholder="Начните вводить текст"
               name="textarea_1"
-              id="Укажешь удобный"
+              id="Укажешь удобный1"
             />
           </div>
 
@@ -51,7 +51,8 @@ function App() {
               className="block_gestures-textarea"
               placeholder="Жесты будут показаны после ввода текста"
               name="textarea_1"
-              id="Укажешь удобный"
+              id="Укажешь удобный2"
+              readOnly
             />
           </div>
 
@@ -68,6 +69,7 @@ function App() {
       </div>
     </div>
   );
+  
 }
 
 export default App;
