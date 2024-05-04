@@ -15,11 +15,12 @@ function Login(){
                 </form>
                 <div className='container_body_footer'>
                     <p className='container_footer_p'>Ещё нет аккаунта ?</p>
-                    <a className='container_footer_a' href=''>Регистрация</a>
+                    <a className='container_footer_a'>Регистрация</a>
                 </div>
-                
             </body>
+            
         </div>
     );
+    
 } 
 export default Login;
