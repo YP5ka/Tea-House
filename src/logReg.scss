@@ -5,7 +5,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 .disable 
 {
-     display:  none !important;
+    display:  none !important;
+    transition: 0.5s;
 }
 
 input[type='number'],
@@ -190,24 +191,26 @@ a, u
     color: rgba(101, 122, 135, 0.40);
     text-align: center;
     font-family: "Istok Web";
-    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: lowercase;
     margin-top: 0;
+    transition: 0.5s;
 }
 
 .timer
 {
     display: flex;
     justify-content: center;
+    transition: 0.5s;
 }
 .modal_div
 {
     display: flex;
     justify-content: center;
     width: auto;
+    transition: 0.5s;
 }
 .modal_btn
 {
@@ -216,7 +219,7 @@ a, u
     border-radius: 10px;
     border: 1px solid #BBB;
     background: #657A87;
-    
+    transition: 0.5s;
 }
 .modal_btn_p
 {
@@ -229,4 +232,5 @@ a, u
     line-height: normal;
     text-transform: lowercase;
     margin: 0;
+    transition: 0.5s;
 }
