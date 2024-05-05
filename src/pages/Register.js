@@ -1,8 +1,10 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 function Register(){
     
     return(
         <div className='container'>
+            <Outlet></Outlet>
             <body className='container_body'>
                 <div className='container_body_div_img'>
                     <img className='container_body_img' src='/img/sign.svg'></img>
