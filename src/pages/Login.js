@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 function Login(){
     return(
         <div className='container'>
@@ -14,7 +15,7 @@ function Login(){
                 </form>
                 <div className='container_body_footer'>
                     <p className='container_footer_p'>Ещё нет аккаунта ?</p>
-                    <a className='container_footer_a'>Регистрация</a>
+                    <Link className="container_footer_a" to='/Register'>Register</Link>
                 </div>
             </body>
         </div>

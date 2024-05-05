@@ -1,6 +1,9 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 function Register(){
     
+    
+
     return(
         <div className='container'>
             <body className='container_body'>
@@ -17,9 +20,8 @@ function Register(){
                 </form>
                 <div className='container_body_footer'>
                     <p className='container_footer_p'>Уже есть аккаунт?</p>
-                    <a className='container_footer_a' href=''>Вход</a>
+                    <Link className="container_footer_a" to='/'>Login</Link>
                 </div>
-                
             </body>
         </div>
     );

@@ -7,7 +7,7 @@ import Personal_account from './pages/Personal_account';
 import NotFoundPage from './pages/NotFoundPage';
 import './index.scss';
 import './logReg.scss';
-import '/ErrorPage.scss';
+import './ErrorPage.scss';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
