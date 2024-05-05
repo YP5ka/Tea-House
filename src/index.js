@@ -8,6 +8,7 @@ import NotFoundPage from './pages/NotFoundPage';
 import './index.scss';
 import './logReg.scss';
 import './ErrorPage.scss';
+import './PersonalAccount.scss'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 

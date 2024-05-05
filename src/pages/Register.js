@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Link} from "react-router-dom";
+
+import ModalIcon from './ModalIcon';
+
 function Register(){
     
-    
+    const [ModalActive,setModalActive] = useState(true)
 
     return(
         <div className='container'>
@@ -23,6 +26,7 @@ function Register(){
                     <Link className="container_footer_a" to='/'>Login</Link>
                 </div>
             </body>
+            <ModalIcon active={ModalActive} setActive={setModalActive}/>
         </div>
     );
 } 
