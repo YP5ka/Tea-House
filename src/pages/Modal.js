@@ -1,5 +1,4 @@
 import React from 'react';
-import '../Modal.scss'
 import './Register'
 
 const Modal = ({active, setActive, children}) =>{

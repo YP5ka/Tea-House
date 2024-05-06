@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import {Link} from "react-router-dom";
 import ModalIcon from './Modal';
-import '../logReg.scss';
 
     function Register(){
         let num = 15;

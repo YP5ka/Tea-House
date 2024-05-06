@@ -1,5 +1,92 @@
-.container_account
+p{
+    font-family: "Istok Web";
+}
+.flex
+{
+    display: flex;
+}
+.Main_App_leftColumn_p
+{
+    font-size: calc( (100vw - 60rem)/50 * 0.5 + 1rem);
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.Main_App_container
 {
     width: 100vw;
     height: 100vh;
+    display: flex;
+    background-color: #EEFFFD;
+}
+.Main_App_leftColumn_user_img
+{
+    width: calc( (100vw - 5rem)/14 * 0.5 + 1rem);
+    height: calc( (100vw - 5rem)/14 * 0.5 + 1rem);
+}
+.Main_App_leftColumn
+{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+}
+.Main_App_leftColumn_div
+{
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.Main_App_leftColumn_user
+{
+    display: flex;
+    cursor: pointer;
+    margin-bottom:10vh;
+}
+.Main_App_leftColumn_user_p
+{
+    font-size: calc( (100vw - 60rem)/50 * 0.5 + 1rem);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.Main_App_leftColumn_textToGesture
+{
+    cursor: pointer;
+    
+}
+.Main_App_leftColumn_gestureToText
+{
+    cursor: pointer;
+    
+}
+.Main_App_leftColumn_favorites
+{
+    cursor: pointer;
+}
+.Main_App_leftColumn_articles
+{
+
+    cursor: pointer;
+    
+}
+.Main_App_leftColumn_block_img
+{
+    margin-right: 10px;
+    width: calc( (100vw - 5rem)/25 * 0.5 + 1rem);
+    height: calc( (100vw - 5rem)/25 * 0.5 + 1rem);
+}
+
+
+
+.Main_App_rightColumn
+{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

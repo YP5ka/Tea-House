@@ -1,8 +1,10 @@
 import React from 'react';
 function Personal_account()
 {
-    <div className='container_account'>
+    return (
+        <div className='container_account'>
             
-    </div>
+        </div>
+    );
 }
 export default Personal_account;
