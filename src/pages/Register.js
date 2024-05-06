@@ -15,9 +15,9 @@ import '../logReg.scss';
                         <img className='container_body_img' src='/img/sign.svg'></img>
                     </div>
                     <form action='' className='container_form' onSubmit={handleSubmit}>
-                        <input className='container_form_input' id='name' placeholder='Имя' type='text' required></input>
-                        <input className='container_form_input' id='surname' placeholder='Фамилия' type='text' required></input>
-                        <input className='container_form_input' id='email' placeholder='Эл. почта' type='email' required></input>
+                        <input className='container_form_input'  id='name' placeholder='Имя' type='text' required></input>
+                        <input className='container_form_input'  id='surname' placeholder='Фамилия' type='text' required></input>
+                        <input className='container_form_input'  id='email' placeholder='Эл. почта' type='email' required></input>
                         <div className='container_form_div_btn'>
                             <button className='container_form_btn' type='submit'>Регистрация</button>
                         </div>
@@ -31,10 +31,10 @@ import '../logReg.scss';
                             <p className='modal_p'>введите одноразовый код отправленный на эл. почту</p>
                             <form onSubmit={handleSubmit}>
                                 <div className='modal_form'>
-                                    <input id='fs' className='modal_form_input' type='number'></input>
-                                    <input id='sc' className='modal_form_input' type='number'></input>
-                                    <input id='tr' className='modal_form_input' type='number'></input>
-                                    <input id='fr' className='modal_form_input' type='number'></input>
+                                    <input id='fs'  className='modal_form_input' type='number'></input>
+                                    <input id='sc'  className='modal_form_input' type='number'></input>
+                                    <input id='tr'  className='modal_form_input' type='number'></input>
+                                    <input id='fr'  className='modal_form_input' type='number'></input>
                                 </div>
                                 <div className='modal_div'>
                                     <button className='modal_btn disable' id='modal_btn'  type='submit'><p className='modal_btn_p'>запросить код повторно</p></button>
@@ -86,7 +86,9 @@ import '../logReg.scss';
                 }
                 num -= 1;
             }, 1000);
-        }    
+        }
+
+              
     } 
 
 export default Register;
