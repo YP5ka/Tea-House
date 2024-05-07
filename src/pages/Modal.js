@@ -13,8 +13,9 @@ const Modal = ({active, setActive, children}) =>{
         document.getElementById('sc').value='';
         document.getElementById('tr').value='';
         document.getElementById('fr').value='';
+        
     }
-
+    
     return(
         <div className = {active ? "modal active" : "modal"} onClick={clickHandler}>
             <div className= {active ? "modal__content active" : "modal__content"} onClick={e => e.stopPropagation()}>

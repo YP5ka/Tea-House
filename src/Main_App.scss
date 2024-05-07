@@ -90,3 +90,14 @@ p{
     justify-content: center;
     align-items: center;
 }
+.Main_App_rightColumn_img
+{
+    width: calc( (100vw - 5rem)/5 * 0.5 + 1rem);
+    height: calc( (100vw - 5rem)/5 * 0.5 + 1rem);
+}
+
+.color
+{
+    color: #60A79F;
+    fill:#60A79F;
+}

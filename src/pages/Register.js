@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import {Link} from "react-router-dom";
 import ModalIcon from './Modal';
-
     function Register(){
-        let num = 15;
+
         const [modalActive, setModalActive] = useState(false)
         return(
             
@@ -59,7 +58,7 @@ import ModalIcon from './Modal';
             document.getElementById('tr').value='';
             document.getElementById('fr').value='';
             
-            num=15;
+            let num=15;
             let sec = document.querySelector('#taimer')
             sec.textContent=num;
             sec.classList.remove("disable");
@@ -67,6 +66,7 @@ import ModalIcon from './Modal';
             sec_description.classList.remove('disable');
             let btn = document.querySelector('#modal_btn');
             btn.classList.add('disable');
+            
             var timer = setInterval(function()
             {
                 if(num===-1)
@@ -75,13 +75,14 @@ import ModalIcon from './Modal';
                     sec_description.classList.add('disable');
                     btn.classList.remove('disable');
                 }
-                if(num < 0)
+                if(num < 0 )
                 {   
                     clearInterval(timer);
                 } 
                 else 
                 {
                     sec.textContent=num;
+
                 }
                 num -= 1;
             }, 1000);
