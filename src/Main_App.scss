@@ -80,7 +80,10 @@ p{
     width: calc( (100vw - 5rem)/25 * 0.5 + 1rem);
     height: calc( (100vw - 5rem)/25 * 0.5 + 1rem);
 }
-
+svg
+{
+    fill: aqua;
+}
 
 
 .Main_App_rightColumn
