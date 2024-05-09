@@ -1,15 +1,13 @@
-import { queryByTestId } from '@testing-library/react';
 import { useState } from 'react';
 import React from 'react';
 
-
 function Main_App(){
-    const [themeF, setColorF] = useState(0); // состояние для смены темы
-    const [themeS, setColorS] = useState(0); // состояние для смены темы
-    const [themeT, setColorT] = useState(0); // состояние для смены темы
-    const [themeFo, setColorFo] = useState(0); // состояние для смены темы
+    const [themeF, setColorF] = useState(0); 
+    const [themeS, setColorS] = useState(0); 
+    const [themeT, setColorT] = useState(0); 
+    const [themeFo, setColorFo] = useState(0); 
 
-
+    const [switcher, setRecord] = useState(0);
     return (
         <div className='Main_App_container'>
             <div className='Main_App_leftColumn'>
@@ -66,20 +64,52 @@ function Main_App(){
             </div>
             <div className='Main_App_rightColumn' id='rightColumn'>
                 <img className='Main_App_rightColumn_img' src='/img/sign.svg'/>
-                <div id='lF' className='Main_App_rightColumn_block_gestureToText disable'>
+                {themeF === 1 ? ( <>
+                    <div id='lF' className='Main_App_rightColumn_block_gestureToText'>
+                        <div className='Main_App_rightColumn_block_gestureToText_obligation'>
+                            <img className='Main_App_rightColumn_block_gestureToText_obligation_img' src='/img/cam.svg'></img>
+                        </div>
+                        { switcher === 0 ? ( <>
+                            <button className='Main_App_rightColumn_block_gestureToText_btn' onClick={()=> {setRecord(1)}}>начать запись</button>
+                            </>
+                        ) : (<></>)}
+                    </div>     
+                    {switcher === 1 ? ( <>
+                            <div className='record_stop' onClick={()=> {setRecord(0)}}>
+                                <div className='record_stop_svg'>
+                                    <img className='record_stop_svg_circle' src='/img/Ellipse w.svg' ></img>
+                                </div>
+                            </div>
+                            <div className='record_pause'>
+                                <div className='record_pause_svg'>
+                                    <img className='record_pause_svg_circle' src='/img/Ellipse r.svg'></img>
+                                </div>
+                            </div>
+                            </>
+                        ) : ( <></> )}
+                    </>
                     
-                </div>
-                <div id='lS' className='Main_App_rightColumn_block_textToGesture disable'>
-                    <form className='Main_App_rightColumn_block_textToGesture_form'>
-                        <textarea className='' placeholder='введите текст' /> 
-                    </form>
-                </div>
-                <div id='lT' className='Main_App_rightColumn_block_favorites disable'>
+                ) : ( <></>)}
+                {themeS === 1 ? ( <>
+                    <div id='lS' className='Main_App_rightColumn_block_textToGesture'>
+                        <form className='Main_App_rightColumn_block_textToGesture_form'>
+                            <textarea className='Main_App_rightColumn_block_textToGesture_form_textarea' placeholder='введите текст' /> 
+                        </form>
+                    </div>       
+                    </>
+                ) : ( <></>)}
+                {themeT === 1 ? ( <>
+                    <div id='lT' className='Main_App_rightColumn_block_favorites'>
                     
-                </div>
-                <div id='lF' className='Main_App_rightColumn_block_articles disable'>
+                    </div>  
+                    </>
+                ) : ( <></>)}
+                {themeFo === 1 ? ( <>
+                    <div id='lFo' className='Main_App_rightColumn_block_articles'>
 
-                </div>
+                    </div>       
+                    </>
+                ) : ( <></>)}
             </div>
         </div>
         
