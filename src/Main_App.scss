@@ -14,7 +14,11 @@ p{
 {
     color: #60A79F;
 }
-
+textarea 
+{
+    resize: none;
+    outline: none ;
+}
 .Main_App_leftColumn_p
 {
     font-size: calc( (100vw - 60rem)/50 * 0.5 + 1rem);
@@ -211,8 +215,56 @@ p{
 
 .Main_App_rightColumn_block_textToGesture_form_textarea
 {
+    width: calc( (100vw - 5rem)/2 * 0.7 + 1rem);    
+    height: 25vh;
+    border-radius: 25px;
+    border: 2px solid #1F333E;
+    background: #1F333E;
+    color: rgba(255, 255, 255, 0.25);
+    text-align: center;
+    font-family: "Istok Web";
+    font-size: calc( (100vw - 30rem)/50 * 0.5 + 1rem) !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+}
+.Main_App_rightColumn_block_textToGesture_form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Main_App_rightColumn_block_textToGesture_div_textarea
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: calc( (100vw - 5rem)/2 * 0.8 + 1rem);
-    height: 35vh;
+    height: 33vh;
+    border-radius: 25px;
+    border: 2px solid #1F333E;
+    background: #1F333E;
+}
+.Main_App_rightColumn_block_textToGesture_form_textarea::placeholder
+{
+    text-align: center;
+}
+.Main_App_rightColumn_block_textToGesture_form_btn
+{
+    border-radius: 25px;
+    background: #FFF;
+    width: calc( (100vw - 5rem)/2 * 0.8 + 1.1rem);
+    height: calc( (100vh - 15rem)/3 * 0.2 + 1.5rem) !important;
+    color: #2A464E;
+    text-align: center;
+    font-family: "Istok Web";
+    font-size: calc( (100vw - 30rem)/50 * 0.5 + 1rem) !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
 }
 
 .Main_App_rightColumn_block_favorites

@@ -92,9 +92,12 @@ function Main_App(){
                 ) : ( <></>)}
                 {themeS === 1 ? ( <>
                     <div id='lS' className='Main_App_rightColumn_block_textToGesture'>
-                        <form className='Main_App_rightColumn_block_textToGesture_form'>
-                            <textarea className='Main_App_rightColumn_block_textToGesture_form_textarea' placeholder='введите текст' /> 
-                        </form>
+                        <div className='Main_App_rightColumn_block_textToGesture_div_textarea'>
+                            <form className='Main_App_rightColumn_block_textToGesture_form'>
+                                <textarea className='Main_App_rightColumn_block_textToGesture_form_textarea' placeholder='введите текст...' /> 
+                                <button className='Main_App_rightColumn_block_textToGesture_form_btn'>Далее</button>
+                            </form>
+                        </div>
                     </div>       
                     </>
                 ) : ( <></>)}
