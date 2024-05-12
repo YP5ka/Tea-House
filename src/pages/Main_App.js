@@ -8,6 +8,7 @@ function Main_App(){
     const [themeFo, setColorFo] = useState(0); 
 
     const [switcher, setRecord] = useState(0);
+    const [stopper, stopRecord] = useState(0);
     return (
         <div className='Main_App_container'>
             <div className='Main_App_leftColumn'>
@@ -66,16 +67,20 @@ function Main_App(){
                 <img className='Main_App_rightColumn_img' src='/img/sign.svg'/>
                 {themeF === 1 ? ( <>
                     <div id='lF' className='Main_App_rightColumn_block_gestureToText'>
-                        <div className='Main_App_rightColumn_block_gestureToText_obligation'>
-                            <img className='Main_App_rightColumn_block_gestureToText_obligation_img' src='/img/cam.svg'></img>
-                        </div>
+                        { stopper === 0 ? (
+                            <>
+                                <div className='Main_App_rightColumn_block_gestureToText_obligation'>
+                                    <img className='Main_App_rightColumn_block_gestureToText_obligation_img' src='/img/cam.svg'></img>
+                                </div>
+                            </>
+                        ) :(<></>)}
                         { switcher === 0 ? ( <>
-                            <button className='Main_App_rightColumn_block_gestureToText_btn' onClick={()=> {setRecord(1)}}>начать запись</button>
+                            <button className='Main_App_rightColumn_block_gestureToText_btn' onClick={()=> {setRecord(1);}}>начать запись</button>
                             </>
                         ) : (<></>)}
                     </div>     
-                    {switcher === 1 ? ( <>
-                            <div className='record_stop' onClick={()=> {setRecord(0)}}>
+                    {switcher === 1 && stopper === 0 ? ( <>
+                            <div className='record_stop' onClick={()=> {stopRecord(1)}}>
                                 <div className='record_stop_svg'>
                                     <img className='record_stop_svg_circle' src='/img/Ellipse w.svg' ></img>
                                 </div>
