@@ -92,6 +92,16 @@ function Main_App(){
                             </div>
                             </>
                         ) : ( <></> )}
+                    {stopper == 1 ?(<>
+                            <div className='Main_App_rightColumn_block_gestureToText_result'>
+                                <div className='Main_App_rightColumn_block_gestureToText_result_p'>
+                                    <p >переведенный текст</p>
+                                </div>
+                               
+                                <button className='Main_App_rightColumn_block_textToGesture_form_btn'  onClick={() =>{stopRecord(0); setRecord(0);}}><img className='reload' src='/img/reload.svg'></img></button>
+                            </div> 
+                        </>
+                    ) : (<></>)}
                     </>
                     
                 ) : ( <></>)}
