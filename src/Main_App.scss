@@ -14,6 +14,11 @@ p{
 {
     color: #60A79F;
 }
+.reload
+{
+    width: calc( (100vw - 35rem)/3 * 0.2 + 1.5rem);
+    height: calc( (100vh - 15rem)/5 * 0.1 + 1.5rem);
+}
 textarea 
 {
     resize: none;
@@ -253,6 +258,9 @@ textarea
 }
 .Main_App_rightColumn_block_textToGesture_form_btn
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 25px;
     background: #FFF;
     width: calc( (100vw - 5rem)/2 * 0.8 + 1.1rem);
@@ -267,8 +275,66 @@ textarea
     text-transform: lowercase;
     cursor: pointer;
 }
+.Main_App_rightColumn_block_gestureToText_result
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc( (100vw - 5rem)/2 * 0.8 + 1rem);
+    height: 33vh;
+    border-radius: 25px;
+    border: 2px solid #2A464E;
+    background: #60A79F;
+}
+.Main_App_rightColumn_block_gestureToText_result_p
+{
+    color: rgba(255, 255, 255, 0.75);
+    font-size: calc( (100vw - 30rem)/50 * 0.5 + 1rem) !important;
+    height: 33vh;
+}
+.Main_App_rightColumn_block_textToGesture_result
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: calc( (100vw - 55rem)/2 * 0.8 + 1rem);
+    height: calc( (100vh - 5rem)/2 * 0.9 + 1rem);
+    border-radius: 25px;
+    border: 2px solid #1F333E;
+    background: #1F333E;
+}
+.Main_App_rightColumn_block_gestureToText_result_div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc( (100vw - 55rem)/2 * 0.8 + 1rem);
+    height: calc( (100vh - 15rem)/1 * 0.5 + 1rem);
+}
+.Main_App_rightColumn_block_gestureToText_form_btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background: #FFF;
+    width: calc( (100vw - 55rem)/2 * 0.8 + 1rem);
+    height: calc( (100vh - 15rem)/2 * 0.2 + 1.5rem) !important;
+    color: #2A464E;
+    text-align: center;
+    font-size: calc( (100vw - 30rem)/50 * 0.5 + 1rem) !important;
+    cursor: pointer;
+}
 
 .Main_App_rightColumn_block_favorites
 {
-
+    width: calc( (100vw - 5rem)/2 * 0.8 + 1rem);
+    height: 35vh;
+    border-radius: 25px;
+    border: 2px solid #1F333E;
+    background: #1F333E;
 }
+
+
