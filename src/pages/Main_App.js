@@ -9,6 +9,8 @@ function Main_App(){
 
     const [switcher, setRecord] = useState(0);
     const [stopper, stopRecord] = useState(0);
+
+    const [sender, sendForm] = useState(0);
     return (
         <div className='Main_App_container'>
             <div className='Main_App_leftColumn'>
@@ -96,6 +98,7 @@ function Main_App(){
                             <div className='Main_App_rightColumn_block_gestureToText_result'>
                                 <div className='Main_App_rightColumn_block_gestureToText_result_p'>
                                     <p >переведенный текст</p>
+                                    {/* тут будет переведенный текст */}
                                 </div>
                                
                                 <button className='Main_App_rightColumn_block_textToGesture_form_btn'  onClick={() =>{stopRecord(0); setRecord(0);}}><img className='reload' src='/img/reload.svg'></img></button>
@@ -105,20 +108,31 @@ function Main_App(){
                     </>
                     
                 ) : ( <></>)}
-                {themeS === 1 ? ( <>
-                    <div id='lS' className='Main_App_rightColumn_block_textToGesture'>
-                        <div className='Main_App_rightColumn_block_textToGesture_div_textarea'>
-                            <form className='Main_App_rightColumn_block_textToGesture_form'>
-                                <textarea className='Main_App_rightColumn_block_textToGesture_form_textarea' placeholder='введите текст...' /> 
-                                <button className='Main_App_rightColumn_block_textToGesture_form_btn'>Далее</button>
-                            </form>
+                {themeS === 1 ? ( <>       
+                    {sender === 0 ? ( <>
+                        <div id='lS' className='Main_App_rightColumn_block_textToGesture'>
+                            <div className='Main_App_rightColumn_block_textToGesture_div_textarea'>
+                                <form className='Main_App_rightColumn_block_textToGesture_form'>
+                                    <textarea className='Main_App_rightColumn_block_textToGesture_form_textarea' placeholder='введите текст...' /> 
+                                    <button className='Main_App_rightColumn_block_textToGesture_form_btn' onClick={(e) =>{e.preventDefault();sendForm(1);}}>Далее</button>
+                                </form>
+                            </div>
                         </div>
-                    </div>       
+                        </>
+                        ) : ( <>
+                            <div className='Main_App_rightColumn_block_textToGesture_result'>
+                                <div className='Main_App_rightColumn_block_gestureToText_result_div'>
+                                    {/* тут будут жесты */}
+                                </div>
+                                <button className='Main_App_rightColumn_block_gestureToText_form_btn'  onClick={() =>{sendForm(0);}}><img className='reload' src='/img/reload.svg'></img></button>
+                            </div> 
+                            </>       
+                        )}
                     </>
                 ) : ( <></>)}
                 {themeT === 1 ? ( <>
                     <div id='lT' className='Main_App_rightColumn_block_favorites'>
-                    
+                        
                     </div>  
                     </>
                 ) : ( <></>)}
