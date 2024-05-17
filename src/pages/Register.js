@@ -29,10 +29,10 @@ import ModalIcon from './Modal';
                             <p className='modal_p'>введите одноразовый код отправленный на эл. почту</p>
                             <form onSubmit={handleSubmit}>
                                 <div className='modal_form'>
-                                    <input id='fs'  className='modal_form_input' type='number'></input>
-                                    <input id='sc'  className='modal_form_input' type='number'></input>
-                                    <input id='tr'  className='modal_form_input' type='number'></input>
-                                    <input id='fr'  className='modal_form_input' type='number'></input>
+                                    <input id='fs' onChange={checkLen} className='modal_form_input' type='number'></input>
+                                    <input id='sc' onChange={checkLen} className='modal_form_input' type='number'></input>
+                                    <input id='tr' onChange={checkLen} className='modal_form_input' type='number'></input>
+                                    <input id='fr' onChange={checkLen} className='modal_form_input' type='number'></input>
                                 </div>
                                 <div className='modal_div'>
                                     <button className='modal_btn disable' id='modal_btn'  type='submit'><p className='modal_btn_p'>запросить код повторно</p></button>
@@ -49,6 +49,13 @@ import ModalIcon from './Modal';
             
             
         );
+        function checkLen(e) 
+        {
+            if (e.target.value.length > 1) 
+            {
+                e.target.value=e.target.value.slice(0,-1)
+            }
+        }
         function handleSubmit(e)
         {
             e.preventDefault();

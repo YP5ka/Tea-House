@@ -14,9 +14,9 @@ function App() {
   }; // свапер форм
 
   return (
-    <div id={theme}>
+    <div id={theme}>  
       <div className="wrapper" id={stateArray}>
-        <header>
+        <header>d
           <h1>Handshake!</h1>
           <h3 className="pointer">Profile</h3>
           <h3 className="pointer">Settings</h3>
